@@ -43,11 +43,9 @@ def hasil():
 
 # not found display
 @app.errorhandler(404)
-def tidakfound(error):                                                  # deklarasikan parameter
-    return make_response('<h1>Maaf file tidak ditemukan</h1>')
-    # return make_response(
-    #     render_template('error.html')
-    # )
+def tidakfound(error):                                                 
+    return make_response('<h1>NOT FOUND (404)</h1>')
+
 
 if __name__ == '__main__':
     app.run(debug = True) 
